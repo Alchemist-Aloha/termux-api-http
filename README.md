@@ -113,7 +113,9 @@ The server will be available at `http://<your-device-ip>:3000`.
 
 ## Security
 
-Currently, this API does not have built-in authentication. It is recommended to use it only within a trusted local network. Avoid exposing this server to the public internet without implementing an API key or other security measures.
+- **API Key**: This project includes basic API key authentication. Ensure you set a strong `API_KEY` in your `.env` file.
+- **HTTP Warning**: This server runs over plain HTTP by default. **It is NOT safe to expose this API to the public internet using the HTTP protocol.** Doing so will transmit your `API_KEY` in cleartext, allowing anyone to intercept it and gain full control over your device's Termux API features.
+- **Recommended Setup**: If you must access this API over the internet, it is strongly recommended to use a reverse proxy (like Nginx, Caddy, or a Cloudflare Tunnel) to provide HTTPS/TLS encryption.
 
 ## License
 
