@@ -1,4 +1,4 @@
-# Termux Backend
+# Termux API HTTP Backend
 
 A Node.js backend for interacting with Android system features through the Termux:API. This project provides a REST API to trigger Termux commands and retrieve system information remotely or locally.
 
