@@ -119,4 +119,4 @@ The server will be available at `http://<your-device-ip>:3000`.
 
 ## License
 
-ISC
+MIT
